@@ -1,0 +1,459 @@
+/* Polices */
+/* Police pour textes */
+@font-face {
+    font-family: 'folksregular';
+    src: url('../fonts/folks-normal-webfont.woff2') format('woff2'),
+         url('../fonts/folks-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Polices pour titres, éléments importants etc */
+@font-face {
+    font-family: 'ffbold';
+    src: url('../fonts/Fashion-Fetish-Bold.woff') format('woff'),
+         url('../fonts/Fashion-Fetish-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Police pour liens dans la page */
+@font-face {
+    font-family: 'ffitalic';
+    src: url('../fonts/Fashion-Fetish-Italic.woff') format('woff'),
+         url('../fonts/Fashion-Fetish-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Police pour logo */
+@font-face {
+    font-family: 'Kerox';
+    src: url('../fonts/Kerox-NonCommercial.woff') format('woff'),
+        url('../fonts/Kerox-NonCommercial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'ffbold','folksregular';
+}
+
+/* DEBUT DE LA BARRE NAV */
+.navbar {
+    background-color: #CB9263;
+/* Pour qu'elle se potionne en haut de l'ecran */
+    position: fixed;
+/* Pour qu'elle se positionne sur tout l'ecran */
+    width: 100%;
+}
+.navbar nav{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+/* Aligne le logo sur le coté et au centre*/
+    padding-left: 3vw;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Mise en forme de la barre de navigation */
+nav .content{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 80px;
+}
+/* Mise en forme du logo */
+.logo a{
+    font-family: 'Kerox';
+    font-size: 50px;
+    font-weight: 600;
+    color: #F4F2ED;
+}
+nav .content .menulist{
+/* Permet de mettre sur la même ligne les titres du menu */
+    display: flex;
+}
+/* Retire les puces sur les listes */
+.content .menulist li{
+    list-style: none;
+}
+/* Mise en forme des titres du menu */
+.content .menulist li a{
+/* Permet de justifier les titres à droite lors de l'ouverture du menu burger */
+    float: right;
+    font-size: 15px;
+/* Permet d'ajouter de l'espace entre les titres du menu */
+    padding: 0 4vw;
+/* Couleur des titres et ombre portée */
+    color: #F9F9F9; text-shadow: black 0.1em 0.1em 0.2em;
+/* Transition de l'ajout de la couleur à la page active */
+    transition: color 0.3s ease-out;
+}
+.content .menulist li:hover a{
+/* Ajoute de la couleur à la page active */
+    color: #4D2C37
+}
+.navbar .menu-icon {
+    color: #F9F9F9;
+    font-size: 20px;
+    cursor: pointer;
+/* Permet de centrer le menu burger */
+    text-align: center;
+}
+.navbar .menu-icon {
+/* Permet de retirer le menu burger du menu de navigation */
+    display: none;
+}
+.navbar input[type="checkbox"]{
+/* Permet de retirer visuellement la case à cocher  */
+    display: none;
+}
+/* FIN DE LA BARRE NAV */
+
+/* DEBUT DU HEADER */
+/*Image de fond header*/
+header{
+/* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+/*Position de l'image*/
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header>div{
+    width: 100%;
+    /* placement texte taille header largeur */
+}
+h1 {
+    font-size: 300%;
+    margin-top: 20%;
+    margin-left: 20%;
+    color: white;
+}
+h2 {
+    margin-left: 20%;
+    font-size: 30px;
+    color: white;
+}
+h3 {
+    font-size: 20px;
+    color: #4D2C37;
+    text-align: center;
+}
+/* FIN DU HEADER */
+
+/* DEBUT DES VALEURS DE L'ATELIER */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 25%);
+    grid-column-gap: 8em;
+    /* Permet d'espacer le contenu dans la page */
+    grid-row-gap: 20em;
+    justify-content: center;
+    margin-top: 10%;
+}
+.img1 {
+    background-image: url('../img/bloc1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.img2 {
+    background-image: url('../img/bloc2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.img3 {
+    background-image: url('../img/bloc3.jpg');
+    background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+.container >div{
+        padding: 1em;
+}
+hr {
+    margin-top: 5%;
+    width: 85%;
+    color: #CB9263;
+    background-color: #CB9263;
+    border: 0;
+    height: 2px;
+}
+.bloc {
+    margin-top: 3em;
+    font-family: 'folksregular';
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+}
+.plink {
+    margin-top: 3em;
+    font-family: 'ffitalic';
+    text-align: right;
+    font-size: 14px;
+    text-decoration-line:underline;
+    text-decoration-color: #CB9263;
+    }
+/* FIN DES VALEURS DE L'ATELIER */
+
+/* DEBUT DE LA GALERIE DES MEUBLES SUR-MESURE */
+.gallery_titles{
+    margin-top: 10em;
+    margin-left: 2em;
+}
+.line_gallery{
+    margin-top: 1%;
+    width: 30%;
+    color: #CB9263;
+    background-color: #CB9263;
+    border: 0;
+    height: 2px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 15vw);
+    grid-template-rows: repeat(3, 25vh);
+    grid-gap: 2vh;
+    gap: 2vh;
+    margin : 2em
+}
+.gallery img{
+    display: none;
+}
+.custom_made_1{
+    background-image: url('../img/custom_made_1.jpg');
+    background-size: 100%;
+    grid-area: 1/1/3/4;
+    background-repeat: no-repeat;
+}
+.custom_made_2{
+    background-image: url('../img/custom_made_2.jpg');
+    background-size: 100%;
+    grid-area: 1/4/2/6;
+    background-repeat: no-repeat;
+}
+.custom_made_3{
+    background-image: url('../img/custom_made_3.jpg');
+    background-size: 100%;
+    grid-area: 1/6/2/7;
+    background-repeat: no-repeat;
+}
+.custom_made_4{
+    background-image: url('../img/custom_made_4.jpg');
+    background-size: 100%;
+    grid-area: 2/4/3/5;
+    background-repeat: no-repeat;
+}
+.custom_made_5{
+    background-image: url('../img/custom_made_5.jpg');
+    background-size: 100%;
+    grid-area: 2/5/3/7;
+    background-repeat: no-repeat;
+}
+.custom_made_6{
+    background-image: url('../img/custom_made_6.jpg');
+    background-size: 100%;
+    grid-area: 3/1/4/7;
+    background-repeat: no-repeat;
+}
+/* FIN DE LA GALERIE DES MEUBLES SUR-MESURE */
+
+/* DEBUT DU FOOTER */
+footer{
+    padding: 40px 60px;
+    background-color: #A7745B;
+    color: #ffffff;
+    width: 100%;
+}
+.grill-container{
+    display: grid;
+    grid-template-columns: repeat(2, 90% 10%);
+    grid-template-rows: 100%;
+}
+.text{
+    font-family: 'folksregular';
+    font-size: 1.5rem;
+    grid-area: 1/1/1/2;
+}
+.social-network{
+    grid-area: 1/2/1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* FIN DU FOOTER */
+
+/* MEDIA QUERIES & RESPONSIVE CODE */
+/* Permet de ne pas couper le menu de navigation lors du responsive */
+@media screen and (max-width: 1275px){
+    .navbar nav{
+/* Permet d'ajouter de l'espace entre les titres du menu */
+    padding: 0 20px;
+    }
+nav .content .menulist{
+/* Permet de bien positionner le déroulant du menu burger */
+    margin-left: -175px;
+}
+.content .menulist li a{
+/* Permet d'ajouter de l'espace entre les titres du menu */
+    padding: 8px 2em;
+}
+    }
+    /* PARTIE PRESENTATION: TEXTES ET PHOTOS */
+.container {
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: repeat(3, 18%);
+    grid-column-gap: 8em;
+    /* Permet d'espacer le contenu dans la page */
+}
+.bloc {
+    margin-top: 2em;
+    font-family: 'folksregular';
+    font-size: 14px;
+    line-height: 14px;
+    text-align: justify;
+}
+.plink {
+    margin-top: 2em;
+    text-align: right;
+    font-size: 10px;
+}
+@media screen and (max-width: 900px){
+.navbar .menu-icon {
+    display: block;
+	position: fixed;
+/* Permet d'ouvrir et de fermer le menu */
+	right: 0%;
+/* Permet de décaler le menu sur la droite */
+	width: 5em;
+}
+.content .menulist li a{
+/* Permet d'ajouter de l'espace entre les titres du menu */
+    padding: 8px 12px;
+/* Ajoute de la marge pour le décoler du bord droit de l'écran */
+    margin-right: 5px;
+}
+nav .content .menulist{
+    display: block;
+    position: fixed;
+    background-color: #CB9263;
+/* Permet de terminer la longueur du menu déroulant du burger et sa largeur */
+    width: 100%;
+    height: 100%;
+/* Le positionne correctement */
+    top:80px;
+    max-width: 200px;
+}
+nav #show-menu:checked ~ .content .menulist {
+/* Permet de d'ouvrir et fermer le menu */
+    right: -100% 
+}
+.content .menulist li a {
+/* Mise en forme des titres dans le menu burger */
+    line-height: 50px;
+    font-size: 18px;
+}
+header{
+    justify-content: center;
+    padding-top: 100px;
+    padding-right: 10px;
+}
+.grill-container{
+    grid-template-columns: repeat(2, 70% 30%);
+}
+}
+@media screen and (max-width: 470px){
+    /* HEADER */
+header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_mobile.jpg);
+        }
+        h1 {
+            font-size: 0%;
+            margin-left: 10%;
+        }
+        h2 {
+            margin-left: 10%;
+            font-size: 30px;
+
+        }
+        .gallery img{
+            display: block;
+        }
+    /* PARTIE PRESENTATION: TEXTES ET PHOTOS */
+.container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 22%);
+    grid-column-gap: 8em;
+    grid-row-gap: 5em;
+    justify-content: center;
+}
+/* Permet de choisir l'ordre des éléments de la grille */
+.container :nth-child(1) { order: 1; }
+.container :nth-child(2) { order: 2; }
+.container :nth-child(3) { order: 4; }
+.container :nth-child(4) { order: 3; }
+.container :nth-child(5) { order: 5; }
+.container :nth-child(6) { order: 6; }
+
+.img1 {
+    background-size: cover;
+}
+.img2 {
+    background-size: cover;
+}
+.img3 {
+    background-size: cover;
+}
+/* INSERE GALERIE */
+.gallery{
+    margin-top: 40em;
+}
+.gallery{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 25vh);
+
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.custom_made_1{
+    grid-area: 1/1/2/2;
+
+}
+.custom_made_2{
+    grid-area: 1/2/2/3;
+}
+.custom_made_3{
+    grid-area: 2/1/3/2;
+}
+.custom_made_4{
+    grid-area: 2/2/3/3;
+}
+.custom_made_5{
+    grid-area: 3/1/4/2;
+}
+.custom_made_6{
+    grid-area: 3/2/4/3;
+}
+/* FOOTER */
+footer {
+    padding: 20px 20px;
+}
+.text{
+    font-size: 1rem;
+}
+.grill-container{
+    grid-template-columns: repeat(2, 65% 35%);
+
+}
+}
