@@ -1,6 +1,6 @@
 /* Polices */
 /* Police pour textes */
-@font-face {
+@font-face{
     font-family: 'folksregular';
     src: url('../fonts/folks-normal-webfont.woff2') format('woff2'),
          url('../fonts/folks-normal-webfont.woff') format('woff');
@@ -8,7 +8,7 @@
     font-style: normal;
 }
 /* Polices pour titres, éléments importants etc */
-@font-face {
+@font-face{
     font-family: 'ffbold';
     src: url('../fonts/Fashion-Fetish-Bold.woff') format('woff'),
          url('../fonts/Fashion-Fetish-Bold.woff2') format('woff2');
@@ -16,7 +16,7 @@
     font-style: normal;
 }
 /* Police pour liens dans la page */
-@font-face {
+@font-face{
     font-family: 'ffitalic';
     src: url('../fonts/Fashion-Fetish-Italic.woff') format('woff'),
          url('../fonts/Fashion-Fetish-Italic.woff2') format('woff2');
@@ -24,7 +24,7 @@
     font-style: normal;
 }
 /* Police pour logo */
-@font-face {
+@font-face{
     font-family: 'Kerox';
     src: url('../fonts/Kerox-NonCommercial.woff') format('woff'),
         url('../fonts/Kerox-NonCommercial.woff2') format('woff2');
@@ -32,7 +32,7 @@
     font-style: normal;
 }
 /* Reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,8 +40,8 @@
     font-family: 'ffbold','folksregular';
 }
 
-/* DEBUT DE LA BARRE NAV */
-.navbar {
+/* --------- DEBUT BARRE NAV --------- */
+.navbar{
     background-color: #CB9263;
 /* Pour qu'elle se potionne en haut de l'ecran */
     position: fixed;
@@ -102,7 +102,7 @@ nav .content .menulist{
 /* Permet de centrer le menu burger */
     text-align: center;
 }
-.navbar .menu-icon {
+.navbar .menu-icon{
 /* Permet de retirer le menu burger du menu de navigation */
     display: none;
 }
@@ -110,9 +110,9 @@ nav .content .menulist{
 /* Permet de retirer visuellement la case à cocher  */
     display: none;
 }
-/* FIN DE LA BARRE NAV */
+/* --------- FIN BARRE NAV ---------- */
 
-/* DEBUT DU HEADER */
+/* --------- DEBUT HEADER --------- */
 /*Image de fond header*/
 header{
 /* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
@@ -126,51 +126,52 @@ header{
     background-size: cover;
 }
 header>div{
+/* placement texte taille header largeur */
     width: 100%;
-    /* placement texte taille header largeur */
 }
-h1 {
+h1{
     font-size: 300%;
     margin-top: 20%;
     margin-left: 20%;
     color: white;
 }
-h2 {
+h2{
     margin-left: 20%;
     font-size: 30px;
     color: white;
 }
-h3 {
+h3{
     font-size: 20px;
     color: #4D2C37;
     text-align: center;
 }
-/* FIN DU HEADER */
+/* --------- FIN HEADER --------- */
 
-/* DEBUT DES VALEURS DE L'ATELIER */
+/* --------- DEBUT DES VALEURS DE L'ATELIER --------- */
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(3, 25%);
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: repeat(3, 18%);
     grid-column-gap: 8em;
     /* Permet d'espacer le contenu dans la page */
     grid-row-gap: 20em;
     justify-content: center;
     margin-top: 10%;
 }
-.img1 {
-    background-image: url('../img/bloc1.jpg');
+.img1{
+    background-image: url("../img/bloc1.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.img2 {
+.img2{
     background-image: url('../img/bloc2.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    align-content:space-around;
 }
-.img3 {
+.img3{
     background-image: url('../img/bloc3.jpg');
     background-size: 100%;
         background-repeat: no-repeat;
@@ -179,7 +180,7 @@ h3 {
 .container >div{
         padding: 1em;
 }
-hr {
+hr{
     margin-top: 5%;
     width: 85%;
     color: #CB9263;
@@ -187,14 +188,14 @@ hr {
     border: 0;
     height: 2px;
 }
-.bloc {
+.bloc{
     margin-top: 3em;
     font-family: 'folksregular';
     font-size: 14px;
     line-height: 18px;
     text-align: justify;
 }
-.plink {
+.plink{
     margin-top: 3em;
     font-family: 'ffitalic';
     text-align: right;
@@ -202,9 +203,10 @@ hr {
     text-decoration-line:underline;
     text-decoration-color: #CB9263;
     }
-/* FIN DES VALEURS DE L'ATELIER */
+/* --------- FIN VALEURS DE L'ATELIER --------- */
 
-/* DEBUT DE LA GALERIE DES MEUBLES SUR-MESURE */
+/* --------- DEBUT GALERIE DE MEUBLES SUR MESURE --------- */
+
 .gallery_titles{
     margin-top: 10em;
     margin-left: 2em;
@@ -264,9 +266,10 @@ hr {
     grid-area: 3/1/4/7;
     background-repeat: no-repeat;
 }
-/* FIN DE LA GALERIE DES MEUBLES SUR-MESURE */
+/* --------- FIN GALERIE MEUBLES SUR MESURE ---------- */
 
-/* DEBUT DU FOOTER */
+/* --------- DEBUT FOOTER --------- */
+
 footer{
     padding: 40px 60px;
     background-color: #A7745B;
@@ -289,9 +292,10 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-/* FIN DU FOOTER */
+/* --------- FIN FOOTER --------- */
 
-/* MEDIA QUERIES & RESPONSIVE CODE */
+/* --------- DEBUT MEDIAS QUERIES (RESPONSIVE CODE)  ---------  */
+
 /* Permet de ne pas couper le menu de navigation lors du responsive */
 @media screen and (max-width: 1275px){
     .navbar nav{
@@ -306,28 +310,29 @@ nav .content .menulist{
 /* Permet d'ajouter de l'espace entre les titres du menu */
     padding: 8px 2em;
 }
-    }
-    /* PARTIE PRESENTATION: TEXTES ET PHOTOS */
-.container {
+}
+
+    /* VALEURS : TEXTES ET PHOTOS */
+.container{
     grid-template-columns: repeat(2, 35%);
     grid-template-rows: repeat(3, 18%);
     grid-column-gap: 8em;
     /* Permet d'espacer le contenu dans la page */
 }
-.bloc {
+.bloc{
     margin-top: 2em;
     font-family: 'folksregular';
     font-size: 14px;
     line-height: 14px;
     text-align: justify;
 }
-.plink {
+.plink{
     margin-top: 2em;
     text-align: right;
     font-size: 10px;
 }
 @media screen and (max-width: 900px){
-.navbar .menu-icon {
+.navbar .menu-icon{
     display: block;
 	position: fixed;
 /* Permet d'ouvrir et de fermer le menu */
@@ -352,11 +357,11 @@ nav .content .menulist{
     top:80px;
     max-width: 200px;
 }
-nav #show-menu:checked ~ .content .menulist {
+nav #show-menu:checked ~ .content .menulist{
 /* Permet de d'ouvrir et fermer le menu */
     right: -100% 
 }
-.content .menulist li a {
+.content .menulist li a{
 /* Mise en forme des titres dans le menu burger */
     line-height: 50px;
     font-size: 18px;
@@ -375,20 +380,20 @@ header{
 header {
             background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_mobile.jpg);
         }
-        h1 {
-            font-size: 0%;
-            margin-left: 10%;
-        }
-        h2 {
+        h1{
             margin-left: 10%;
             font-size: 30px;
+        }
+        h2{
+            margin-left: 10%;
+            font-size: 20px;
 
         }
-        .gallery img{
+.gallery img{
             display: block;
         }
-    /* PARTIE PRESENTATION: TEXTES ET PHOTOS */
-.container {
+    /* VALEURS : TEXTES ET PHOTOS */
+.container{
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 22%);
     grid-column-gap: 8em;
@@ -403,18 +408,19 @@ header {
 .container :nth-child(5) { order: 5; }
 .container :nth-child(6) { order: 6; }
 
-.img1 {
+.img1{
     background-size: cover;
 }
-.img2 {
+.img2{
     background-size: cover;
 }
-.img3 {
+.img3{
     background-size: cover;
 }
-/* INSERE GALERIE */
+
+/* GALERIE DE PHOTOS */
 .gallery{
-    margin-top: 40em;
+    margin-top: 5em;
 }
 .gallery{
     grid-template-columns: repeat(2, 1fr);
@@ -428,7 +434,10 @@ header {
 }
 .custom_made_1{
     grid-area: 1/1/2/2;
-
+}
+.gallery_titles{
+    margin-top: 45em;
+    margin-left: 2em;
 }
 .custom_made_2{
     grid-area: 1/2/2/3;
@@ -445,8 +454,9 @@ header {
 .custom_made_6{
     grid-area: 3/2/4/3;
 }
+
 /* FOOTER */
-footer {
+footer{
     padding: 20px 20px;
 }
 .text{
@@ -457,3 +467,4 @@ footer {
 
 }
 }
+/* --------- FIN MEDIAS QUERIES (RESPONSIVE CODE) --------- */
